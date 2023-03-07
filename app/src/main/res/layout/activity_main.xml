@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:id="@+id/txtVtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="¿Contiene mayusculas o minusculas?"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Palabra"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/txtVtitle"
+        >
+    </EditText>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/editTxt"
+        android:backgroundTint="#5E91E43C"
+        android:textColor="@color/white"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/txtVResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnSum"
+        android:layout_marginTop="15dp"
+
+        android:background="#3EFFFFFF"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:text="Resultado"
+        >
+
+    </TextView>
+
+</RelativeLayout>
